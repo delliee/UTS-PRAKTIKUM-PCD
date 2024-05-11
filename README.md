@@ -1,7 +1,7 @@
 # UTS Praktikum PCD C
 
 ## Analisis Citra:
-
+![Analisis Citra](https://github.com/delliee/UTS-Praktikum-PCD/assets/156888006/0b15d10a-bcfc-428f-9d27-19182fa50f10)
 Pada citra "pcd.jpg" setiap saluran warna yang diekstraksi (r, g, b) ditampilkan dalam skala abu-abu (cmap="gray"). Ini membuat setiap saluran warna tampak sebagai citra grayscale yang menggambarkan tingkat kecerahan setiap saluran warna pada gambar asli.
 Pada gambar asli (color_image), dapat dilihat bagaimana kombinasi saluran warna ini memberikan warna yang berbeda pada gambar.
 
@@ -29,7 +29,7 @@ Konversi skala abu-abu membantu memvisualisasikan setiap saluran satu per satu, 
 
 
 ## Analisis Histogram:
-
+![Analisis Histogram](https://github.com/delliee/UTS-Praktikum-PCD/assets/156888006/26596729-236c-4c82-93cf-dcae2e41ecd9)
 - Grafik Batang Biru
 
     Grafik batang biru menunjukkan jumlah data yang dikelompokkan berdasarkan rentang nilai tertentu. Sumbu Y menunjukkan jumlah data, sedangkan sumbu X menunjukkan rentang nilai. Sumbu X dibagi menjadi enam segmen, masing-masing mewakili rentang nilai 50 unit.
@@ -61,7 +61,7 @@ Konversi skala abu-abu membantu memvisualisasikan setiap saluran satu per satu, 
 
 
 ## Nilai Ambang Batas:
-
+![Nilai Ambang Batas](https://github.com/delliee/UTS-Praktikum-PCD/assets/156888006/cd84cd3d-7166-4dda-9ac2-7ba9deda3644)
 Untuk mengetahui nilai ambang batas, dapat emnggunakan fungsi 'cv2.inRange'. Fungsi ini bergantung pada niali ambang batas yang ditetapkan untuk Hue, Saturation dan Value atau HSV.
 
 - Nilai ambang batas terdiri dari dua array, yaitu lower_bound (batas bawah) dan upper_bound (batas atas).
