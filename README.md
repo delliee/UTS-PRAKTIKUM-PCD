@@ -2,6 +2,7 @@
 
 ## Analisis Citra:
 ![Analisis Citra](https://github.com/delliee/UTS-Praktikum-PCD/assets/156888006/0b15d10a-bcfc-428f-9d27-19182fa50f10)
+
 Pada citra "pcd.jpg" setiap saluran warna yang diekstraksi (r, g, b) ditampilkan dalam skala abu-abu (cmap="gray"). Ini membuat setiap saluran warna tampak sebagai citra grayscale yang menggambarkan tingkat kecerahan setiap saluran warna pada gambar asli.
 Pada gambar asli (color_image), dapat dilihat bagaimana kombinasi saluran warna ini memberikan warna yang berbeda pada gambar.
 
@@ -28,12 +29,14 @@ Konversi skala abu-abu membantu memvisualisasikan setiap saluran satu per satu, 
 - Biru: Untuk pixel yang dianggap biru, nilai intensitas birunya harus jauh lebih tinggi daripada nilai merah dan hijaunya. Ini menunjukkan bahwa angka pada kolom ketiga harus jauh lebih besar daripada angka di kolom pertama dan kedua.
 
 - [49]: (-0.5, 1279.5, 910.5, -0.5)
+
 Pada gambar, nilai intensitas merah adalah 1279.5, sedangkan nilai intensitas hijau dan biru berturut-turut adalah 910.5 dan -0.5. Berdasarkan kriteria di atas, pixel ini bisa dianggap merah karena nilai intensitas merahnya jauh lebih tinggi daripada nilai intensitas hijau dan birunya.
 
 Nilai ambang batas tertentu untuk menentukan apakah suatu pixel merah, hijau, atau biru tergantung pada keseluruhan rentang intensitas citra dan tingkat sensitivitas yang diinginkan. Namun, secara umum, pixel bisa dianggap merah jika nilai intensitas merahnya minimal dua kali lebih besar daripada nilai intensitas hijau dan birunya, begitupula untuk penjelasan hijau dan biru.
 
 ## Analisis Histogram:
 ![Analisis Histogram](https://github.com/delliee/UTS-Praktikum-PCD/assets/156888006/26596729-236c-4c82-93cf-dcae2e41ecd9)
+
 - Grafik Batang Biru
 
     Grafik batang biru menunjukkan jumlah data yang dikelompokkan berdasarkan rentang nilai tertentu. Sumbu Y menunjukkan jumlah data, sedangkan sumbu X menunjukkan rentang nilai. Sumbu X dibagi menjadi enam segmen, masing-masing mewakili rentang nilai 50 unit.
