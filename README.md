@@ -78,7 +78,7 @@ Untuk mengetahui nilai ambang batas, dapat emnggunakan fungsi 'cv2.inRange'. Fun
     Value (Nilai): Menunjukkan kecerahan warna (semakin tinggi nilai, warna semakin terang).
 - Pixel dalam gambar akan dianggap memiliki warna yang diinginkan jika nilai pada ketiga kanal (Hue, Saturation, Value) berada di antara lower_bound dan upper_bound.
 
-    1.Gambar Kontras
+    1. Gambar Kontras
 
 - Konsep nilai ambang batas tidak secara langsung berlaku pada gambar kontras dalam kasus ini. Kontras mengacu pada perbedaan intensitas antara bagian gambar yang berbeda. Gambar kontras itu sendiri tidak memiliki nilai ambang batas tertentu. Sebaliknya, ini mewakili tingkat kontras di seluruh gambar.
   
