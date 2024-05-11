@@ -21,12 +21,16 @@ Proses analisis citra yang dilakukan:
 
 Konversi skala abu-abu membantu memvisualisasikan setiap saluran satu per satu, karena gambar berwarna menggabungkan saluran-saluran ini untuk menghasilkan visual akhir.
 
-- Biru adalah warna dominan dalam gambar. Dapat terlihat dari konsentrasi tinggi piksel biru pada diagram batang biru dan kehadiran biru di seluruh spektrum Hue pada diagram batang warna campuran.
+- Merah: Suatu pixel dapat dianggap merah jika nilai intensitas merahnya jauh lebih tinggi daripada nilai intensitas hijau dan birunya.  Dengan kata lain, angka pada kolom pertama harus jauh lebih besar daripada angka di kolom kedua dan ketiga.
 
-- Hijau dan merah juga ada dalam gambar, tetapi dalam jumlah yang lebih sedikit dibandingkan dengan biru. Terlihat dari puncak yang lebih rendah pada diagram batang hijau dan merah serta kehadiran warna hijau dan merah yang berkurang pada diagram batang warna campuran.
+- Hijau: Demikian pula, untuk pixel yang dianggap hijau, nilai intensitas hijaunya harus jauh lebih tinggi daripada nilai merah dan birunya. Ini berarti angka pada kolom kedua harus jauh lebih besar daripada angka di kolom pertama dan ketiga.
 
-- Piksel hijau dan merah menunjukkan tingkat Saturasi dan Value yang bervariasi. Menunjukkan bahwa warna tersebut memiliki tingkat intensitas dan kemurnian yang berbeda dalam gambar.
+- Biru: Untuk pixel yang dianggap biru, nilai intensitas birunya harus jauh lebih tinggi daripada nilai merah dan hijaunya. Ini menunjukkan bahwa angka pada kolom ketiga harus jauh lebih besar daripada angka di kolom pertama dan kedua.
 
+- [49]: (-0.5, 1279.5, 918.5, -0.5)
+Pada gambar, nilai intensitas merah adalah 1279.5, sedangkan nilai intensitas hijau dan biru berturut-turut adalah 918.5 dan -0.5. Berdasarkan kriteria di atas, pixel ini bisa dianggap merah karena nilai intensitas merahnya jauh lebih tinggi daripada nilai intensitas hijau dan birunya.
+
+Nilai ambang batas tertentu untuk menentukan apakah suatu pixel merah, hijau, atau biru tergantung pada keseluruhan rentang intensitas citra dan tingkat sensitivitas yang diinginkan. Namun, secara umum, pixel bisa dianggap merah jika nilai intensitas merahnya minimal dua kali lebih besar daripada nilai intensitas hijau dan birunya, begitupula untuk penjelasan hijau dan biru.
 
 ## Analisis Histogram:
 ![Analisis Histogram](https://github.com/delliee/UTS-Praktikum-PCD/assets/156888006/26596729-236c-4c82-93cf-dcae2e41ecd9)
