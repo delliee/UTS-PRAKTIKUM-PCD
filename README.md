@@ -78,21 +78,26 @@ Untuk mengetahui nilai ambang batas, dapat emnggunakan fungsi 'cv2.inRange'. Fun
     Value (Nilai): Menunjukkan kecerahan warna (semakin tinggi nilai, warna semakin terang).
 - Pixel dalam gambar akan dianggap memiliki warna yang diinginkan jika nilai pada ketiga kanal (Hue, Saturation, Value) berada di antara lower_bound dan upper_bound.
 
-    1. Bar Chart Biru:
+    1.Gambar Kontras
 
-- Pada bar chart biru, nilai ambang batas tidak terlihat secara eksplisit. Namun, kita dapat menduga nilainya berdasarkan warna biru yang ditampilkan. Warna biru umumnya memiliki Hue antara 100 dan 140, Saturation antara 50 dan 255, dan Value antara 50 dan 255.
+- Konsep nilai ambang batas tidak secara langsung berlaku pada gambar kontras dalam kasus ini. Kontras mengacu pada perbedaan intensitas antara bagian gambar yang berbeda. Gambar kontras itu sendiri tidak memiliki nilai ambang batas tertentu. Sebaliknya, ini mewakili tingkat kontras di seluruh gambar.
+  
+    2. Deteksi Warna Biru:
 
-    2. Bar Chart Hijau:
+- Pada warna biru, nilai ambang batas tidak terlihat secara eksplisit. Namun, kita dapat menduga nilainya berdasarkan warna biru yang ditampilkan. Warna biru umumnya memiliki Hue antara 100 dan 140, Saturation antara 50 dan 255, dan Value antara 50 dan 255.
 
-- Pada bar chart hijau, nilai ambang batas tidak terlihat secara eksplisit. Warna hijau umumnya memiliki Hue antara 40 dan 80, Saturation antara 50 dan 255, dan Value antara 50 dan 255.
+    3. Deteksi Warna Hijau:
 
-    3. Bar Chart Merah:
+- Pada warna hijau, nilai ambang batas tidak terlihat secara eksplisit. Warna hijau umumnya memiliki Hue antara 40 dan 80, Saturation antara 50 dan 255, dan Value antara 50 dan 255.
 
-- Pada bar chart merah, nilai ambang batas tidak terlihat secara eksplisit. Warna merah umumnya memiliki Hue antara 0 dan 10 atau antara 170 dan 180, Saturation antara 50 dan 255, dan Value antara 50 dan 255.
+    3. Deteksi Warna Merah:
 
-    4. Bar Chart Kombinasi:
+- Pada warna merah, nilai ambang batas tidak terlihat secara eksplisit. Warna merah umumnya memiliki Hue antara 0 dan 10 atau antara 170 dan 180, Saturation antara 50 dan 255, dan Value antara 50 dan 255.
 
-- Pada bar chart kombinasi, nilai ambang batas tidak terlihat secara eksplisit. Warna yang ditampilkan merupakan hasil kombinasi dari deteksi warna biru, hijau, dan merah.
+Penentuan nilai ambang batas ini dapat dilakukan dengan beberapa pertimbangan:
+- Hue (Rona): Rentang nilai Hue dipilih berdasarkan spektrum warna murni untuk setiap warna. Misalnya, untuk warna biru, nilai Hue berkisar antara 100 hingga 140 derajat karena itu mencakup spektrum warna biru murni.
+- Saturation (Saturasi): Rentang nilai Saturasi dipilih untuk mengakomodasi variasi kejenuhan warna dari warna paling pucat hingga paling jenuh. Nilai ambang batas yang diberikan (misalnya, 50 hingga 255) mencerminkan rentang kejenuhan yang mungkin terjadi dalam warna tersebut.
+- Value (Nilai): Rentang nilai Value dipilih untuk mencakup variasi kecerahan warna dari gelap hingga terang. Dengan memberikan rentang seperti 50 hingga 255, ini memperhitungkan variasi dari warna yang lebih gelap hingga lebih terang dalam deteksi.  
 
 ## Tahapan Project Citra Digital
 
