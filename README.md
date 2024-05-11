@@ -27,8 +27,8 @@ Konversi skala abu-abu membantu memvisualisasikan setiap saluran satu per satu, 
 
 - Biru: Untuk pixel yang dianggap biru, nilai intensitas birunya harus jauh lebih tinggi daripada nilai merah dan hijaunya. Ini menunjukkan bahwa angka pada kolom ketiga harus jauh lebih besar daripada angka di kolom pertama dan kedua.
 
-- [49]: (-0.5, 1279.5, 918.5, -0.5)
-Pada gambar, nilai intensitas merah adalah 1279.5, sedangkan nilai intensitas hijau dan biru berturut-turut adalah 918.5 dan -0.5. Berdasarkan kriteria di atas, pixel ini bisa dianggap merah karena nilai intensitas merahnya jauh lebih tinggi daripada nilai intensitas hijau dan birunya.
+- [49]: (-0.5, 1279.5, 910.5, -0.5)
+Pada gambar, nilai intensitas merah adalah 1279.5, sedangkan nilai intensitas hijau dan biru berturut-turut adalah 910.5 dan -0.5. Berdasarkan kriteria di atas, pixel ini bisa dianggap merah karena nilai intensitas merahnya jauh lebih tinggi daripada nilai intensitas hijau dan birunya.
 
 Nilai ambang batas tertentu untuk menentukan apakah suatu pixel merah, hijau, atau biru tergantung pada keseluruhan rentang intensitas citra dan tingkat sensitivitas yang diinginkan. Namun, secara umum, pixel bisa dianggap merah jika nilai intensitas merahnya minimal dua kali lebih besar daripada nilai intensitas hijau dan birunya, begitupula untuk penjelasan hijau dan biru.
 
